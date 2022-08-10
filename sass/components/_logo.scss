@@ -1,0 +1,14 @@
+.logo {
+  width: 145px;
+  font-family: $logo-text-style;
+
+  font-size: 26px;
+  line-height: 1.19;
+  color: $logo-color2;
+  &--blue {
+    color: $logo-color1;
+  }
+  &--white {
+    color: $white-color;
+  }
+}
