@@ -1,11 +1,5 @@
 .container {
-  margin: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    min-width: 480px;
-  }
+  min-width: calc(100% - 2 * 15px);
 }
 
 @media screen and (min-width: 769px) {
@@ -16,6 +10,7 @@
 
 @media screen and (min-width: 1200px) {
   .container {
+    margin: auto;
     max-width: 1200px;
   }
 }

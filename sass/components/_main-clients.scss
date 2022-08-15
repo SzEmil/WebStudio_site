@@ -1,21 +1,31 @@
 .clients {
+  padding: 60px 0;
   &__header {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.03em;
 
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     text-align: center;
   }
 
   .main-clients {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-width: 450px;
+    padding: 0 15px;
 
+    &__item {
+      flex-basis: calc(100% / 2 - 2 * 15px);
+
+      &:nth-child(-n + 4) {
+        padding-bottom: 30px;
+      }
+    }
     &__background {
       display: flex;
-      width: 170px;
       height: 92px;
       border: 1px solid $icon-team-color;
       border-radius: 4px;
@@ -42,6 +52,72 @@
       &:focus {
         fill: $icon-clients-background-color;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    &__header {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+
+      padding-bottom: 50px;
+      text-align: center;
+    }
+
+    .main-clients {
+      display: flex;
+      &__item {
+        flex-basis: calc(100% / 3 - 2 * 15px);
+      }
+      &__background {
+        display: flex;
+        border: 1px solid $icon-team-color;
+        border-radius: 4px;
+      }
+      &__icon {
+        padding: 16px 32px 16px 32px;
+        fill: $icon-team-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__header {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+
+      padding-bottom: 50px;
+      text-align: center;
+    }
+
+    .main-clients {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 0;
+
+      &__item {
+        flex-basis: calc(100% / 6 - 2 * 15px);
+        &:nth-child(-n + 4) {
+          padding-bottom: 0;
+        }
+      }
+    }
+    &__background {
+      display: flex;
+      border: 1px solid $icon-team-color;
+      border-radius: 4px;
+    }
+    &__icon {
+      padding: 16px 32px 16px 32px;
+      fill: $icon-team-color;
     }
   }
 }

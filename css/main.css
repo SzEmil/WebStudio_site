@@ -45,14 +45,9 @@ body {
   }
 }
 .container {
-  margin: auto;
+  min-width: calc(100% - 30px);
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    min-width: 480px;
-  }
-}
 @media screen and (min-width: 769px) {
   .container {
     min-width: 768px;
@@ -60,6 +55,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container {
+    margin: auto;
     max-width: 1200px;
   }
 }
@@ -821,6 +817,7 @@ header {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    padding: 0 0;
     /*------------------ Styl do opisu teamu */
   }
   .main-team__card {
@@ -901,26 +898,40 @@ header {
     fill: #afb1b8;
   }
 }
+.clients {
+  padding: 60px 0;
+}
 .clients__header {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   text-align: center;
 }
 .clients .main-clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-width: 450px;
+  padding: 0 15px;
+}
+.clients .main-clients__item {
+  -ms-flex-preferred-size: calc(50% - 30px);
+      flex-basis: calc(50% - 30px);
+}
+.clients .main-clients__item:nth-child(-n+4) {
+  padding-bottom: 30px;
 }
 .clients .main-clients__background {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -949,6 +960,72 @@ header {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .clients__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .clients .main-clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .clients .main-clients__item {
+    -ms-flex-preferred-size: calc(33.3333333333% - 30px);
+        flex-basis: calc(33.3333333333% - 30px);
+  }
+  .clients .main-clients__background {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  }
+  .clients .main-clients__icon {
+    padding: 16px 32px 16px 32px;
+    fill: #afb1b8;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .clients .main-clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 0;
+  }
+  .clients .main-clients__item {
+    -ms-flex-preferred-size: calc(16.6666666667% - 30px);
+        flex-basis: calc(16.6666666667% - 30px);
+  }
+  .clients .main-clients__item:nth-child(-n+4) {
+    padding-bottom: 0;
+  }
+  .clients__background {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  }
+  .clients__icon {
+    padding: 16px 32px 16px 32px;
+    fill: #afb1b8;
+  }
+}
 .foot {
   padding-top: 0;
   padding-bottom: 0;
