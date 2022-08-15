@@ -1,22 +1,24 @@
 // Section advantages
 .advantages {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .main-advantages {
-  display: flex;
-  justify-content: space-around;
+  min-width: 450px;
+  // max-width: calc(100% - 2 * 15px);
+  padding: 0 15px;
 
   &__item {
-    display: flex;
-    width: 270px;
-    flex-direction: column;
+    padding-bottom: 30px;
   }
   &__photo {
-    width: 270px;
     height: 120px;
     background-color: $our-team-background;
     border-radius: 4px;
     margin-bottom: 30px;
+
     display: flex;
+    justify-content: center;
     align-items: center;
   }
   &__header {
@@ -26,11 +28,46 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    text-align: center;
   }
   &__text {
     font-size: 14px;
     line-height: 1.71;
     color: $paragraph-link-content;
     letter-spacing: 0.03em;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-advantages {
+    padding: 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      flex-basis: $tablet;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding: 94px 0px;
+  }
+  .main-advantages {
+    justify-content: space-around;
+    padding: 0 0;
+    &__item {
+      flex-basis: $desktop;
+    }
+    &__header {
+      text-align: left;
+    }
   }
 }
