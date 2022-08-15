@@ -1,52 +1,57 @@
 // sekcja activities
 .activities {
-  padding-top: 0;
-
-  &__header {
-    padding-bottom: 50px;
-    text-align: center;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  }
-
-  &-content {
-    display: flex;
-    justify-content: space-around;
-
-    &__photo-container {
-      height: 294px;
-      position: relative;
-    }
-    &__img {
-      display: block;
-    }
-
-    &__tag {
-      display: flex;
-      position: absolute;
-      width: 100%;
-      bottom: 0px;
-      padding: 27px 90px;
-      background-color: $main-activities-tag-background;
-      align-items: center;
-      justify-content: center;
-    }
-    &__text {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: $white-color;
-    }
-  }
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1200px) {
+  .activities {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 94px;
+
+    &__header {
+      padding-bottom: 50px;
+      text-align: center;
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-around;
+
+      &__photo-container {
+        height: 294px;
+        position: relative;
+      }
+      &__img {
+        display: block;
+      }
+
+      &__tag {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        padding: 27px 90px;
+        background-color: $main-activities-tag-background;
+        align-items: center;
+        justify-content: center;
+      }
+      &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $white-color;
+      }
+    }
+  }
 }

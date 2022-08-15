@@ -667,61 +667,69 @@ header {
   .main-advantages__item {
     -ms-flex-preferred-size: calc(25% - 30px);
         flex-basis: calc(25% - 30px);
+    padding-bottom: 0;
   }
   .main-advantages__header {
     text-align: left;
   }
 }
 .activities {
-  padding-top: 0;
-}
-.activities__header {
-  padding-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-.activities-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.activities-content__photo-container {
-  height: 294px;
-  position: relative;
-}
-.activities-content__img {
-  display: block;
-}
-.activities-content__tag {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  width: 100%;
-  bottom: 0px;
-  padding: 27px 90px;
-  background-color: rgba(47, 48, 58, 0.8);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.activities-content__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
+  display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .activities {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+  .activities__header {
+    padding-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+  .activities-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .activities-content__photo-container {
+    height: 294px;
+    position: relative;
+  }
+  .activities-content__img {
+    display: block;
+  }
+  .activities-content__tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 27px 90px;
+    background-color: rgba(47, 48, 58, 0.8);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .activities-content__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
 .team {
   padding: 60px 0px;
   background-color: #f5f4fa;
