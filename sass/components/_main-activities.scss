@@ -1,6 +1,7 @@
 // sekcja activities
 .activities {
   padding-top: 0;
+
   &__header {
     padding-bottom: 50px;
     text-align: center;
@@ -42,4 +43,10 @@
       color: $white-color;
     }
   }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
