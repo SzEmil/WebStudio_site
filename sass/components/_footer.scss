@@ -1,19 +1,18 @@
 .foot {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 footer {
-  width: 1600px;
-  height: 252px;
   background: $main-baner-color;
 }
 .footer__format {
   display: flex;
-  padding-left: 15px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 .footer-contact {
-  padding-top: 60px;
-
+  justify-content: center;
   &__adress {
     font-size: 14px;
     line-height: 1.71;
@@ -25,7 +24,7 @@ footer {
     padding-top: 20px;
   }
   &__item:nth-child(n + 3) {
-    padding-top: 9px;
+    padding-top: 8px;
   }
   &__link {
     color: $link-contact-footer;
@@ -49,8 +48,7 @@ footer {
 }
 
 .footer-icon-format {
-  padding-top: 72px;
-  padding-left: 70px;
+  padding-top: 60px;
 
   &__title {
     font-weight: 700;
@@ -93,9 +91,10 @@ footer {
 }
 
 .footer-newsletter {
-  padding-left: 78px;
+  text-align: center;
   padding-top: 72px;
   display: flex;
+  justify-content: center;
 
   &__title {
     font-weight: 700;
@@ -105,17 +104,27 @@ footer {
     text-transform: uppercase;
     color: $white-color;
   }
+
   &__format {
-    padding-top: 20px;
+    padding: 20px 15px 0 15px;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  &__label {
+    display: flex;
+    justify-content: center;
   }
   &__input {
-    padding: 15px 0px 15px 16px;
+    padding: 15px 16px 15px 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    width: 358px;
+    resize: vertical;
+    width: 100%;
+    max-width: 450px;
     background-color: transparent;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -161,8 +170,9 @@ footer {
       transform: scale(1.1);
     }
     &-box {
-      padding-left: 12px;
+      padding-top: 20px;
       display: flex;
+      justify-content: center;
     }
   }
   &__svg {
@@ -170,5 +180,184 @@ footer {
     height: 24px;
     display: flex;
     margin-left: 24px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+}
+@media screen and (min-width: 1200px) {
+  .foot {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  footer {
+    width: 1600px;
+    height: 252px;
+    background: $main-baner-color;
+  }
+  .footer__format {
+    display: flex;
+    padding-left: 15px;
+  }
+  .footer-contact {
+    padding-top: 60px;
+
+    &__adress {
+      font-size: 14px;
+      line-height: 1.71;
+      font-style: normal;
+      letter-spacing: 0.03em;
+      color: $white-color;
+    }
+    &__item:nth-child(2) {
+      padding-top: 20px;
+    }
+    &__item:nth-child(n + 3) {
+      padding-top: 9px;
+    }
+    &__link {
+      color: $link-contact-footer;
+
+      font-size: 14px;
+      line-height: 1.71;
+
+      letter-spacing: 0.03em;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover,
+    &__link:focus {
+      color: $links-color;
+    }
+    &__link .link-mail-portfolio {
+      text-decoration: underline;
+    }
+  }
+
+  .footer-icon-format {
+    padding-top: 72px;
+    padding-left: 70px;
+
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $white-color;
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    &__item:nth-child(n + 2) {
+      padding-left: 10px;
+    }
+    &__icon {
+      padding: 12px;
+      fill: $white-color;
+    }
+    &__link {
+      display: flex;
+      background-color: $white-color;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: $footer-social-background;
+
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover,
+    &:focus {
+      background-color: $footer-social-background-hover;
+    }
+  }
+
+  .footer-newsletter {
+    padding-left: 78px;
+    padding-top: 72px;
+    display: flex;
+
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $white-color;
+    }
+    &__format {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+    }
+    &__input {
+      padding: 15px 0px 15px 16px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      width: 358px;
+      background-color: transparent;
+
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: $white-color;
+
+      transition-property: border-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &::placeholder {
+        color: $placeholder-text-color;
+      }
+      &:not(:placeholder-shown):required:valid {
+        border-color: $input-correct;
+      }
+      &:focus {
+        outline: none;
+        border-color: $links-color;
+      }
+    }
+    &__button {
+      background-color: $button-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      border: none;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(30 / 16);
+      color: #ffffff;
+      padding: 10px 24px 10px 42px;
+
+      display: flex;
+      align-items: center;
+      fill: $white-color;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+      &-box {
+        padding-left: 12px;
+        display: flex;
+      }
+    }
+    &__svg {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      margin-left: 24px;
+    }
   }
 }
