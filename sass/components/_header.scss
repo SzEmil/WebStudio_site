@@ -197,6 +197,9 @@
     display: none;
   }
 
+  header {
+    border-bottom: 1px solid $header-line-bottom-color;
+  }
   .header-display-format {
     padding: 25px 15px 25px 15px;
     display: flex;

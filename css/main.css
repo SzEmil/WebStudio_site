@@ -616,6 +616,9 @@ body {
   .mobile-menu {
     display: none;
   }
+  header {
+    border-bottom: 1px solid #ececec;
+  }
   .header-display-format {
     padding: 25px 15px 25px 15px;
     display: -webkit-box;
