@@ -512,12 +512,7 @@ body {
     padding-top: 302px;
   }
   .header-mobile-contact__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: inline;
     fill: #757575;
     color: #757575;
     -webkit-transition-property: fill, color;
@@ -542,7 +537,6 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
     padding: 48px 0 48px 40px;
     background-color: #ffffff;
     z-index: 999;

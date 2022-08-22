@@ -90,8 +90,7 @@
     padding-top: 302px;
 
     &__link {
-      display: flex;
-      align-items: center;
+      display: inline;
       fill: $paragraph-link-content;
       color: $paragraph-link-content;
 
@@ -121,7 +120,6 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
     padding: 48px 0 48px 40px;
     background-color: $white-color;
     z-index: 999;
