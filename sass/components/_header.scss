@@ -120,6 +120,7 @@
     top: 0;
     left: 0;
     width: 100vw;
+    height: 100vh;
     padding: 48px 0 48px 40px;
     background-color: $white-color;
     z-index: 999;
@@ -160,6 +161,7 @@
   .header-mobile-media {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 5px;
     padding-top: 64px;
 
     &__item {
@@ -247,7 +249,7 @@
           background-color: $icon-clients-background-color;
           position: absolute;
           width: 100%;
-          top: 46px;
+          top: 47px;
         }
 
         &--active {
@@ -260,7 +262,7 @@
             background-color: $links-color;
             position: absolute;
             width: 100%;
-            top: 46px;
+            top: 47px;
           }
         }
       }
@@ -329,12 +331,12 @@
       }
       &__link {
         &:hover::after {
-          top: 45px;
+          top: 46px;
         }
 
         &--active {
           &::after {
-            top: 45px;
+            top: 46px;
           }
         }
       }
