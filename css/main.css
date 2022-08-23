@@ -100,6 +100,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: visibility 250ms linear, opacity 250ms linear, -webkit-transform 250ms linear;
   transition: visibility 250ms linear, opacity 250ms linear, -webkit-transform 250ms linear;
   transition: transform 250ms linear, visibility 250ms linear, opacity 250ms linear;
@@ -113,10 +119,6 @@ body {
 }
 
 .modal {
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

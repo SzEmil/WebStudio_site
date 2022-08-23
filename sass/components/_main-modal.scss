@@ -6,8 +6,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  // justify-content: center;
-  // align-items: center;
+  justify-content: center;
+  align-items: center;
   transition: transform 250ms linear, visibility 250ms linear,
     opacity 250ms linear;
 }
@@ -18,9 +18,6 @@
 }
 
 .modal {
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   position: absolute;
   flex-direction: column;
