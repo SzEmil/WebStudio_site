@@ -1834,9 +1834,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -1949,15 +1946,10 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
   }
   .portfolio-product__item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-        flex-basis: calc(50% - 30px);
+    -ms-flex-preferred-size: calc(50% - 15px);
+        flex-basis: calc(50% - 15px);
   }
   .portfolio-product__item:nth-child(-n+8) {
     padding-bottom: 0px;
@@ -1979,6 +1971,8 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .portfolio-product__item {
     width: 370px;

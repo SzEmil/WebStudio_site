@@ -1,7 +1,7 @@
 .portfolio-product {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   padding-left: 15px;
   padding-right: 15px;
   img {
@@ -105,12 +105,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
 
     &__item {
-      flex-basis: calc(100% / 2 - 2 * 15px);
+      flex-basis: calc(100% / 2 - 2 * 7.5px);
 
       &:nth-child(-n + 8) {
         padding-bottom: 0px;
@@ -132,6 +129,10 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+
+    padding-left: 0px;
+    padding-right: 0px;
+
     &__item {
       width: 370px;
       flex-basis: calc(100% / 3 - 2 * 15px);
