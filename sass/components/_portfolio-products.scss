@@ -4,7 +4,11 @@
   justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
-
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
   &__item {
     min-width: 320px;
     flex-basis: calc(100% / 1 - 2 * 15px);

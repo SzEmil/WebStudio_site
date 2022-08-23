@@ -883,7 +883,7 @@ body {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(46, 196, 255, 0.2)), color-stop(99%, rgba(0, 0, 0, 0.7))), url(../images/images_main/main-banner.jpg);
     background-image: linear-gradient(rgba(46, 196, 255, 0.2) 1%, rgba(0, 0, 0, 0.7) 99%), url(../images/images_main/main-banner.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-attachment: scroll;
     text-align: center;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1068,7 +1068,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -1238,7 +1238,7 @@ img {
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 }
@@ -1818,6 +1818,11 @@ footer {
           justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
+}
+.portfolio-product img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .portfolio-product__item {
   min-width: 320px;
