@@ -29,6 +29,8 @@
   transition: transform 300ms linear, visibility 300ms linear,
     opacity 300ms linear;
 
+  margin-left: 15px;
+  margin-right: 15px;
   &__close-btn {
     position: absolute;
     top: 8px;
@@ -48,11 +50,13 @@
   flex-direction: column;
 
   &__group {
+    justify-content: center;
     display: flex;
     flex-direction: column;
     padding: 40px;
   }
   &__header {
+    min-width: 210px;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -61,6 +65,11 @@
     text-transform: none;
 
     padding-bottom: 12px;
+
+    &-box {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__label {
     padding-bottom: 10px;
@@ -105,7 +114,8 @@
   }
 
   &__input {
-    width: 448px;
+    resize: vertical;
+    width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 12px 12px 42px;
@@ -121,8 +131,9 @@
   }
 
   &__textarea {
+    resize: vertical;
+    width: 100%;
     resize: none;
-    width: 448px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
@@ -257,6 +268,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .modal {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
