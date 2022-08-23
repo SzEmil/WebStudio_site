@@ -811,11 +811,12 @@ body {
 
 .baner {
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(46, 196, 255, 0.2)), color-stop(99%, rgba(0, 0, 0, 0.7))), url(../images/images_main/main-banner.jpg);
-  background-image: linear-gradient(rgba(46, 196, 255, 0.2) 1%, rgba(0, 0, 0, 0.7) 99%), url(../images/images_main/main-banner.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(46, 196, 255, 0.2)), color-stop(99%, rgba(0, 0, 0, 0.7))), url(../images/images_main/mian-banner-mobile.jpg);
+  background-image: linear-gradient(rgba(46, 196, 255, 0.2) 1%, rgba(0, 0, 0, 0.7) 99%), url(../images/images_main/mian-banner-mobile.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-attachment: scroll;
+  background-position: center;
   text-align: center;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -858,66 +859,25 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .solutions {
-    display: block;
-    text-align: center;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   .baner {
-    background-color: #2f303a;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(46, 196, 255, 0.2)), color-stop(99%, rgba(0, 0, 0, 0.7))), url(../images/images_main/main-banner.jpg);
-    background-image: linear-gradient(rgba(46, 196, 255, 0.2) 1%, rgba(0, 0, 0, 0.7) 99%), url(../images/images_main/main-banner.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(46, 196, 255, 0.2)), color-stop(99%, rgba(0, 0, 0, 0.7))), url(../images/images_main/main-banner-tablet.jpg);
+    background-image: linear-gradient(rgba(46, 196, 255, 0.2) 1%, rgba(0, 0, 0, 0.7) 99%), url(../images/images_main/main-banner-tablet.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-attachment: scroll;
     text-align: center;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100%;
     padding: 200px 0;
-  }
-  .baner__header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .baner__slogan {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6153846154;
-    color: #ffffff;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 0px 0px 30px 0px;
-  }
-  .baner__button {
-    padding: 10px 42px;
-    background: #2196f3;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-  }
-  .baner__button:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
 }
 @media screen and (min-width: 1200px) {
-  .solutions {
-    display: block;
-    text-align: center;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   .baner {
     background-color: #2f303a;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(46, 196, 255, 0.2)), color-stop(99%, rgba(0, 0, 0, 0.7))), url(../images/images_main/main-banner.jpg);
@@ -930,40 +890,19 @@ body {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100%;
     padding: 200px 0;
-  }
-  .baner__header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .baner__slogan {
     width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636363636;
-    color: #ffffff;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 0px 0px 30px 0px;
   }
-  .baner__button {
-    padding: 10px 42px;
-    background: #2196f3;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-  }
-  .baner__button:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .baner {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(46, 196, 255, 0.2)), color-stop(99%, rgba(0, 0, 0, 0.7))), url("../images/images_main/main-banner.jpg");
+    background-image: linear-gradient(rgba(46, 196, 255, 0.2) 1%, rgba(0, 0, 0, 0.7) 99%), url("../images/images_main/main-banner.jpg");
+    background-position: center;
   }
 }
 .advantages {
@@ -1294,6 +1233,13 @@ img {
   .main-team-social__icon {
     padding: 12px;
     fill: #afb1b8;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 }
 .clients {
