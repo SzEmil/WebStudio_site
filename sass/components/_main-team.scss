@@ -19,7 +19,6 @@ img {
   height: auto;
 }
 .main-team {
-  padding: 0 15px;
   min-width: 320px;
 
   &__card {
@@ -102,7 +101,7 @@ img {
 
     &__card {
       padding-bottom: 30px;
-      flex-basis: $tablet;
+      flex-basis: calc(100% / 2 - 2 * 7.5px);
     }
 
     /*------------------ Styl do opisu teamu */

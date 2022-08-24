@@ -212,13 +212,13 @@ footer {
     display: flex;
     text-align: left;
     flex-direction: row;
-    padding-left: 15px;
+    justify-content: left;
+    padding-left: 0px;
   }
 
   .footer__mod {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     padding-left: 0px;
     padding-right: 0px;
   }

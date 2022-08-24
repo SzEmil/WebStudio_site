@@ -24,7 +24,9 @@
 
     &-content {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
+      gap: 30px;
 
       &__photo-container {
         height: 294px;

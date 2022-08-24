@@ -6,7 +6,6 @@
 .main-advantages {
   min-width: 320px;
   // max-width: calc(100% - 2 * 15px);
-  padding: 0 15px;
 
   &__item {
     padding-bottom: 30px;
@@ -47,12 +46,14 @@
     padding: 0 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    gap: 30px;
+    justify-content: center;
 
     &__item {
       display: flex;
       flex-direction: column;
-      flex-basis: $tablet;
+      padding-bottom: 0;
+      flex-basis: calc(100% / 2 - 2 * 7.5px);
     }
   }
 }
