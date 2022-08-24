@@ -96,7 +96,8 @@ img {
   .main-team {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    gap: 30px;
+    justify-content: center;
     padding: 0 0;
 
     &__card {

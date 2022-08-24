@@ -13,16 +13,12 @@
   .main-clients {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    gap: 30px;
     min-width: 320px;
     padding: 0 15px;
 
     &__item {
-      flex-basis: calc(100% / 2 - 2 * 15px);
-
-      &:nth-child(-n + 4) {
-        padding-bottom: 30px;
-      }
+      flex-basis: calc(100% / 2 - 2 * 7.5px);
     }
     &__background {
       display: flex;
@@ -70,6 +66,9 @@
 
     .main-clients {
       display: flex;
+      justify-content: center;
+      padding-left: 0;
+      padding-right: 0;
       &__item {
         flex-basis: calc(100% / 3 - 2 * 15px);
       }
