@@ -14,7 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    min-width: 320px;
+    min-width: 290px;
 
     &__item {
       flex-basis: calc(100% / 2 - 2 * 7.5px);
@@ -71,15 +71,6 @@
       &__item {
         flex-basis: calc(100% / 3 - 2 * 10px);
       }
-      &__background {
-        display: flex;
-        border: 1px solid $icon-team-color;
-        border-radius: 4px;
-      }
-      &__icon {
-        padding: 16px 32px 16px 32px;
-        fill: $icon-team-color;
-      }
     }
   }
 }
@@ -107,15 +98,6 @@
           padding-bottom: 0;
         }
       }
-    }
-    &__background {
-      display: flex;
-      border: 1px solid $icon-team-color;
-      border-radius: 4px;
-    }
-    &__icon {
-      padding: 16px 32px 16px 32px;
-      fill: $icon-team-color;
     }
   }
 }
