@@ -13,11 +13,13 @@
     letter-spacing: 0.03em;
   }
 }
+
 img {
   display: block;
   width: 100%;
   height: auto;
 }
+
 .main-team {
   min-width: 290px;
 
@@ -71,8 +73,10 @@ img {
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover,
-      &:focus {
+      &:focus,
+      &:active {
         background-color: #2196f3;
+        fill: $white-color;
       }
     }
     &__icon {
@@ -84,7 +88,8 @@ img {
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover,
-      &:focus {
+      &:focus,
+      &:active {
         fill: $white-color;
       }
     }
@@ -141,6 +146,7 @@ img {
       letter-spacing: 0.03em;
     }
   }
+
   .main-team {
     display: flex;
     justify-content: space-around;

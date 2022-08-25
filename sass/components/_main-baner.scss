@@ -6,7 +6,7 @@
   padding-bottom: 0;
 }
 
-.baner {
+.banner {
   background-color: $main-baner-color;
   background-image: linear-gradient(
       rgba(46, 196, 255, 0.2) 1%,
@@ -56,7 +56,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .baner {
+  .banner {
     background-image: linear-gradient(
         rgba(46, 196, 255, 0.2) 1%,
         rgba(0, 0, 0, 0.7) 99%
@@ -72,7 +72,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .baner {
+  .banner {
     background-color: $main-baner-color;
     background-image: linear-gradient(
         rgba(46, 196, 255, 0.2) 1%,
@@ -92,7 +92,7 @@
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .baner {
+  .banner {
     background-image: linear-gradient(
         rgba(46, 196, 255, 0.2) 1%,
         rgba(0, 0, 0, 0.7) 99%

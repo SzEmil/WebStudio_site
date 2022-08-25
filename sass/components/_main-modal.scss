@@ -11,6 +11,7 @@
   transition: transform 250ms linear, visibility 250ms linear,
     opacity 250ms linear;
 }
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -44,6 +45,7 @@
     }
   }
 }
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -178,7 +180,6 @@
     justify-content: center;
     padding-top: 30px;
   }
-
   &__statue {
     font-size: 14px;
     line-height: 24px;
@@ -270,7 +271,4 @@
   .modal {
     margin: 0;
   }
-}
-
-@media screen and (min-width: 1200px) {
 }
