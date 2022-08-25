@@ -150,6 +150,10 @@
         color: $links-color;
         fill: $links-color;
       }
+
+      &--blue {
+        color: $links-color;
+      }
     }
 
     &__item:nth-child(2) {
@@ -195,7 +199,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
@@ -323,7 +327,7 @@
   .header-display-format {
     display: flex;
     align-items: center;
-    padding: 25px 0px 25px 0px;
+    padding: 25px 0px 25px 15px;
 
     .header-nav {
       padding-left: 93px;

@@ -183,8 +183,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 769px) {
-
+@media screen and (min-width: 768px) {
   .footer__mod {
     display: flex;
     flex-direction: row;
@@ -207,7 +206,8 @@ footer {
     text-align: left;
     flex-direction: row;
     justify-content: left;
-    padding-left: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .footer__mod {

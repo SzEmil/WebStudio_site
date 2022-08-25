@@ -144,6 +144,8 @@ img {
   .main-team {
     display: flex;
     justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 15px;
 
     &__card {
       padding-bottom: 0;

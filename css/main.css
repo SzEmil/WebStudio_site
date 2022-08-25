@@ -33,11 +33,6 @@ body {
     min-width: 320px;
   }
 }
-@media screen and (min-width: 769px) {
-  body {
-    min-width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   body {
     max-width: 1600px;
@@ -49,11 +44,6 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 769px) {
-  .container {
-    min-width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .container {
     padding: 0 0;
@@ -600,6 +590,9 @@ body {
     color: #2196f3;
     fill: #2196f3;
   }
+  .mobile-contact__link--blue {
+    color: #2196f3;
+  }
   .mobile-contact__item:nth-child(2) {
     padding-top: 32px;
     font-size: 24px;
@@ -635,7 +628,7 @@ body {
     color: #2196f3;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
@@ -786,7 +779,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 25px 0px 25px 0px;
+    padding: 25px 0px 25px 15px;
   }
   .header-display-format .header-nav {
     padding-left: 93px;
@@ -848,7 +841,7 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 100%;
-  padding: 200px 0;
+  padding: 116px 0;
 }
 .baner__header {
   display: -webkit-box;
@@ -889,6 +882,7 @@ body {
   .baner {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(46, 196, 255, 0.2)), color-stop(99%, rgba(0, 0, 0, 0.7))), url(../images/images_main/main-banner-tablet.jpg);
     background-image: linear-gradient(rgba(46, 196, 255, 0.2) 1%, rgba(0, 0, 0, 0.7) 99%), url(../images/images_main/main-banner-tablet.jpg);
+    padding: 200px 0;
   }
   .baner__slogan {
     font-weight: 900;
@@ -926,6 +920,9 @@ body {
 }
 .main-advantages__item {
   padding-bottom: 30px;
+}
+.main-advantages__item:nth-child(4) {
+  padding-bottom: 0;
 }
 .main-advantages__photo {
   height: 120px;
@@ -973,9 +970,6 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .main-advantages__item {
     display: -webkit-box;
@@ -997,9 +991,10 @@ body {
   .main-advantages {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 0 0;
+    padding: 0 15px;
   }
   .main-advantages__item {
+    min-width: 270px;
     -ms-flex-preferred-size: calc(25% - 30px);
         flex-basis: calc(25% - 30px);
     padding-bottom: 0;
@@ -1032,8 +1027,9 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 30px;
   }
   .activities-content__photo-container {
@@ -1217,6 +1213,8 @@ img {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 15px;
     /*------------------ Styl do opisu teamu */
   }
   .main-team__card {
@@ -1353,7 +1351,7 @@ img {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 0 0;
+    padding: 0 15px;
   }
   .clients .main-clients__item {
     -ms-flex-preferred-size: calc(16.6666666667% - 30px);
@@ -1609,7 +1607,7 @@ footer {
   margin-left: 24px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .footer__mod {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1643,7 +1641,8 @@ footer {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    padding-left: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .footer__mod {
     display: -webkit-box;
