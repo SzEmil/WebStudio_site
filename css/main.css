@@ -1272,13 +1272,13 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
   min-width: 290px;
 }
 .clients .main-clients__item {
   -ms-flex-preferred-size: calc(50% - 15px);
-  flex-basis: calc(50% - 15px);
+      flex-basis: calc(50% - 15px);
 }
 .clients .main-clients__background {
   display: -webkit-box;
@@ -1290,9 +1290,9 @@ img {
   -webkit-transition-property: border-color;
   transition-property: border-color;
   -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients .main-clients__background:hover, .clients .main-clients__background:focus {
   border-color: #2196f3;
@@ -1304,9 +1304,9 @@ img {
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients .main-clients__icon:hover, .clients .main-clients__icon:focus {
   fill: #2196f3;
@@ -1326,15 +1326,12 @@ img {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        flex-wrap: wrap;
     gap: 30px;
   }
   .clients .main-clients__item {
     -ms-flex-preferred-size: calc(33.3333333333% - 20px);
-    flex-basis: calc(33.3333333333% - 20px);
+        flex-basis: calc(33.3333333333% - 20px);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1350,13 +1347,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
     padding: 0 15px;
   }
   .clients .main-clients__item {
+    min-width: 170px;
     -ms-flex-preferred-size: calc(16.6666666667% - 30px);
-    flex-basis: calc(16.6666666667% - 30px);
+        flex-basis: calc(16.6666666667% - 30px);
   }
   .clients .main-clients__item:nth-child(-n+4) {
     padding-bottom: 0;
