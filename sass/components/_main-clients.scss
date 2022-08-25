@@ -17,6 +17,7 @@
     min-width: 290px;
 
     &__item {
+      width: 130px;
       flex-basis: calc(100% / 2 - 2 * 7.5px);
     }
     &__background {
