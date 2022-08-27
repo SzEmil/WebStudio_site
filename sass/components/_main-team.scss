@@ -76,6 +76,9 @@ img {
       &:focus,
       &:active {
         background-color: #2196f3;
+      }
+      &:hover svg,
+      &:focus svg {
         fill: $white-color;
       }
     }
@@ -86,12 +89,6 @@ img {
       transition-property: fill, background-color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      &:hover,
-      &:focus,
-      &:active {
-        fill: $white-color;
-      }
     }
   }
 }

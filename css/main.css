@@ -432,7 +432,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 25px 0px 25px 0px;
+    padding: 10px 0px 10px 0px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1139,6 +1139,8 @@ img {
 }
 .main-team-social__background:hover, .main-team-social__background:focus, .main-team-social__background:active {
   background-color: #2196f3;
+}
+.main-team-social__background:hover svg, .main-team-social__background:focus svg {
   fill: #ffffff;
 }
 .main-team-social__icon {
@@ -1150,9 +1152,6 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.main-team-social__icon:hover, .main-team-social__icon:focus, .main-team-social__icon:active {
-  fill: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -1299,6 +1298,9 @@ img {
   border-color: #2196f3;
   fill: #2196f3;
 }
+.clients .main-clients__background:hover svg, .clients .main-clients__background:focus svg {
+  fill: #2196f3;
+}
 .clients .main-clients__icon {
   padding: 16px 32px 16px 32px;
   fill: #afb1b8;
@@ -1308,9 +1310,6 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients .main-clients__icon:hover, .clients .main-clients__icon:focus {
-  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
