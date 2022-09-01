@@ -35,7 +35,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   body {
-    max-width: 1600px;
+    width: 100%;
   }
 }
 .container {
@@ -48,7 +48,7 @@ body {
   .container {
     padding: 0 0;
     margin: auto;
-    max-width: 1200 px;
+    max-width: 1200px;
   }
 }
 .section {
